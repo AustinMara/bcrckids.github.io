@@ -1,0 +1,68 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color palette */
+:root {
+  --brand-orange: #F17720;    /* Vivid Tangelo */
+  --brand-orange-light: #FFA630; /* Deep Saffron */
+  --brand-blue: #00A7E1;      /* Vivid Cerulean */
+  --brand-blue-dark: #0474BA; /* French Blue */
+  --bg-gray: #EBEBEB;         /* Bright Gray */
+  --text-dark: #333;
+}
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Headlines */
+h1 {
+  font-size: 2.5rem;
+  color: var(--brand-orange);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--brand-blue-dark);
+  margin-bottom: 2rem;
+}
+
+/* Link container */
+h3 {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+/* Links */
+a {
+  color: var(--brand-blue);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+a:hover {
+  background-color: var(--brand-orange-light);
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Layout responsiveness */
+@media (min-width: 768px) {
+  body {
+    padding: 3rem 6rem;
+  }
+}
